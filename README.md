@@ -12,9 +12,9 @@ Java idiomatic client for [Cloud Datastore][product-docs].
 
 If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
 ```xml
-<dependencyManagement>
-  <dependencies>
-    <dependency>
+dependencyManagement
+  dependencies
+    dependency
       <groupId>com.google.cloud</groupId>
       <artifactId>libraries-bom</artifactId>
       <version>19.2.1</version>
@@ -22,7 +22,7 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
       <scope>import</scope>
     </dependency>
   </dependencies>
-</dependencyManagement>
+ dependencyManagement
 
 <dependencies>
   <dependency>
@@ -122,10 +122,10 @@ Then add the following code to put an entity in Datastore.
 
 ```java
 KeyFactory keyFactory = datastore.newKeyFactory().setKind("Person");
-Key key = keyFactory.newKey("john.doe@gmail.com");
+Key key = keyFactory.newKey("ascbappy@gmail.com");
 Entity entity = Entity.newBuilder(key)
-    .set("name", "John Doe")
-    .set("age", 51)
+    .set("name", "Bjbappy")
+    .set("age", 28)
     .set("favorite_food", "pizza")
     .build();
 datastore.put(entity);
