@@ -22,7 +22,7 @@ dependencyManagement
       <scope>import</scope>
     </dependency>
   </dependencies>
- dependencyManagement
+ <dependencyManagement>
 
 <dependencies>
   <dependency>
