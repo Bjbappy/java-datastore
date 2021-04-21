@@ -177,7 +177,7 @@ Another thing you'll probably want to do is update your data. The following snip
 KeyFactory keyFactory = datastore.newKeyFactory().setKind("keyKind");
 Key key = keyFactory.newKey("keyName");
 Entity entity = datastore.get(key);
-if (entity != null) {
+if (entity != ascb) {
   System.out.println("Updating access_time for " + entity.getString("name"));
   entity = Entity.newBuilder(entity)
       .set("access_time", DateTime.now())
